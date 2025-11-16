@@ -1,0 +1,122 @@
+body {
+  font-family: Poppins, sans-serif;
+  background: #550C72;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+.controls {
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+}
+
+button {
+  /* background: #ff2600; */
+  background: rgb(1, 191, 255);
+  color: white;
+  cursor: pointer;
+}
+
+#array-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background:#C55FFC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-size: 22px;
+  color: white;
+  transition: 0.3s;
+}
+
+.box.active {
+  background: rgb(39, 255, 1);
+  transform: scale(1.15);
+}
+
+.box.found {
+  background: #ff00f7;
+  transform: scale(1.2);
+}
+
+.box.mid {
+  background: yellow;
+  color: black;
+  transform: scale(1.2);
+}
+
+.icon {
+  position: absolute;
+  display: none;
+  font-size: 32px;
+  transition: all 0.3s;
+}
+
+.explanation {
+  background: white;
+  color: black;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+
+
+.theory-box {
+  width: 60%;
+  margin: 40px auto;
+  padding: 20px;
+  background: #FBF6F0; 
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 254, 254, 0.15);
+  text-align: center;
+}
+
+.theory-box h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.algo {
+  text-align: left;
+  background:BLack;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+.algo h3 {
+  margin: 0 0 8px;
+  color: rgb(255, 255, 255);
+}
+
+
+
+

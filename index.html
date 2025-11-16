@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting + Searching Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>SORTING & SEARCHING VISUALIZER</h1>
+
+<div class="controls">
+  <input type="text" id="arrayInput" placeholder="Enter numbers: 5,3,8,1">
+  <button onclick="createArray()">Create Array</button>
+
+  <select id="algorithm">
+    <option value="bubble">Bubble Sort</option>
+    <option value="insertion">Insertion Sort</option>
+    <option value="selection">Selection Sort</option>
+    <option value="linear">Linear Search</option>
+    <option value="binary">Binary Search</option>
+  </select>
+
+  <input type="number" id="searchKey" placeholder="Search Key">
+  <button onclick="startAlgo()">Start</button>
+</div>
+
+<div id="explanation" class="explanation">Steps will appear here...</div>
+
+<div id="array-container"></div>
+<div id="icon" class="icon">🔎</div>
+
+
+<div class="theory-box">
+  <h2>Algorithms Theory </h2>
+
+  <div class="algo">
+    <h3>1. Bubble Sort</h3>
+    <p>Bubble sort compares adjacent elements and swaps them if needed. After each full pass, the largest element moves to its correct position.</p>
+  </div>
+
+  <div class="algo">
+    <h3>2. Insertion Sort</h3>
+    <p>Insertion sort picks elements one-by-one and puts them into the correct position in the sorted portion of the array.</p>
+  </div>
+
+  <div class="algo">
+    <h3>3. Selection Sort</h3>
+    <p>Selection sort finds the minimum element from the unsorted part and places it at the beginning.</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
